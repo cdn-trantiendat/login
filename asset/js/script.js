@@ -2,9 +2,9 @@
 loggedin=false;
 username="";
 password="";
-username=prompt("Nhập tên đăng nhập:");
+username=prompt("Xác nhận lại tên đăng nhập:");
 username=username.toLowerCase();
-password=prompt("Nhập mật khẩu:");
+password=prompt("Xác nhận lại mật khẩu:");
 password=password.toLowerCase();
 <!-- ADMIN -->
 if (username=="admin@trantiendat.com.vn" && password=="admin") { 
