@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Condensed");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+	font-family: Raleway;
+	color:#003366;
+	font-size:11px;
+}
+input[type=submit], input[type=button], input[type=reset], button{
+  background-color: transparent;
+  font-family: raleway;
+  border:1px solid #003366;
+  color: #003366;
+  padding: 2px 6px;
+  text-decoration: none;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #003366;
+  font-family: raleway;
+  border:1px solid #003366;
+  color: #fff;
+  padding: 2px 6px;
+  text-decoration: none;
+  margin: 0px 0px;
+  cursor: pointer;
+}
