@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Đăng nhập</title>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+<meta content='' name='description' />
+<meta content='' name='author' /> 
+<link href='https://cdn-trantiendat.github.io/login/asset/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn-trantiendat.github.io/login/asset/css/components-rounded.css' id='style_components' rel='stylesheet' type='text/css' /> 
+<link rel='stylesheet' href='https://cdn-trantiendat.github.io/login/asset/css/style.css'> 
+<script src='https://cdn-trantiendat.github.io/login/asset/js/script.js'></script>
+<link rel='shortcut icon' href='favicon.ico' /> 
+<style> 
+body{ 								-webkit-touch-callout: none; 						-webkit-user-select: none; 					-moz-user-select: none; 								-ms-user-select: none; 								-o-user-select: none; 								user-select: none; 								} 	img { 								-webkit-user-drag: none; 								user-drag: none; 								-webkit-touch-callout: none; 								} 								</style> 								<script type="text/JavaScript"> 												function killCopy(e){ 												return false 												} 												function reEnable(){ 												return true 												} 												document.onselectstart=new 												 Function (Ă¢â‚¬Å“return falseĂ¢â‚¬ï¿½)if 												 (window.sidebar){ 												 document.onmousedown=killCopydocument.onclick=reEnable 												 } 												 function nocontext(e) { 												 var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName; 												 if (clickedTag == "IMG") return false; 												 } 												 document.oncontextmenu = nocontext; 												 </script> 												 <!-- <script> 												 function myFunction() { 	document.getElementById("button_id").value = "Clicked"; 	 } setInterval(function(){ document.getElementById("button_id").click();	 }, 2000); </script>-->
+</head>
+<body class='login'>
+<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+<div class='menu-toggler sidebar-toggler'>
+</div>
+<!-- END SIDEBAR TOGGLER BUTTON -->
+<!-- BEGIN LOGO -->
+<img src='https://on-trantiendat.shortcm.li/logo.trantiendat.com.vn' style='width: 30%; align: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 5%; margin-top:5%;'/>
+<!-- END LOGO -->
+<!-- BEGIN LOGIN -->
+<div class='content'>
+<!-- BEGIN LOGIN FORM --><form><h3>CỔNG ĐĂNG NHẬP HỆ THỐNG</h3>
+<div class='alert alert-success' id='register-success' style='display:none'> 				<strong>Đăng ký!</strong> Bạn đã đăng ký thành công. Để kích hoạt tài khoản hãy vui lòng kiểm tra Email kích hoạt hệ thống. 			</div>
+<div class='alert alert-success' id='forgot-success' style='display:none'> 				<strong>Quên mật khẩu!</strong> Bạn vui lòng kiểm tra Email để nhận được mật khẩu mới. 			</div>
+<div class='form-group'>
+<label class='control-label visible-ie8 visible-ie9' for='UserName'>T&#224;i khoản</label>
+<input class='form-control form-control-solid placeholder-no-fix' data-val='true' data-val-required='The Tài khoản field is required.' id='UserName' name='UserName' placeholder='Tài khoản...' type='text' value='' />
+<span class='field-validation-valid' data-valmsg-for='UserName' data-valmsg-replace='true'></span>
+</div>
+<div class='form-group'>
+<label class='control-label visible-ie8 visible-ie9' for='Password'>Mật khẩu</label>
+<input class='form-control form-control-solid placeholder-no-fix' data-val='true' data-val-required='The Mật khẩu field is required.' id='Password' name='Password' placeholder='Mật khẩu...' type='password' />
+<span class='field-validation-valid' data-valmsg-for='Password' data-valmsg-replace='true'></span>
+</div>
+<div class='form-actions'>
+<center><button type='button' onClick='LogIn()'>Đăng nhập</button>
+</center><!--<label class='rememberme check'>
+<input data-val='true' data-val-required='The Nhớ tài khoản? field is required.' id='RememberMe' name='RememberMe' style='opacity: 1' type='checkbox' value='true' /><input name='RememberMe' type='hidden' value='false' /> ghi nhớ </label> --><a style='display:none' href='javascript:;' id='forget-password' class='forget-password'>Quên mật khẩu?</a>
+</div>
+<div class='create-account' style='display:none'>
+<p>
+<a href='javascript:;' id='register-btn' class='uppercase'><i class='fa fa-user'></i> Đăng ký tài khoản</a>
+</p>
+</div>
+</form>
+<!-- END LOGIN FORM -->
+<div id='form-user'>
+<!-- BEGIN FORGOT PASSWORD FORM -->
+<form class='forget-form' data-bind='with: $root.email, validationOptions: { insertMessages: false }'>
+<h3>Quên mật khẩu ?</h3>
+<div id='forgot-error' class='alert alert-warning' style='display:none'>
+<strong>Thông báo!</strong> địa chỉ Email không hợp lệ. </div>
+<div id='processing' class='alert alert-success' style='display:none'>
+<img src='https://portal.vtc.gov.vn/BackEnd/assets/admin/layout/img/loading.gif' />
+<strong>Đang xử lý...</strong>
+</div>
+<p> Hãy nhập địa chỉ Email </p>
+<div class='form-group'>
+<input class='form-control placeholder-no-fix' type='text' autocomplete='off' placeholder='Email' name='email' data-bind='value: Email' />
+<span data-bind='validationMessage: Email'></span>
+</div>
+<div class='form-actions'>
+<button type='button' id='back-btn' class='btn btn-default'>Trở lại</button>
+<button type='button' class='btn btn-success uppercase pull-right' data-bind='click: $root.resetPassword'>Gửi đi</button>
+</div>
+</form>
+<!-- END FORGOT PASSWORD FORM -->
+<!-- BEGIN REGISTRATION FORM -->
+<form class='register-form' id='form-register' data-bind='with: $root.selectedUser, validationOptions: { insertMessages: false }'>
+<h3>Đăng ký</h3>
+<div id='register-error' class='alert alert-warning' style='display:none'>
+<strong>Thông báo!</strong> thông tin đăng ký không hợp lệ. </div>
+<div id='reg-processing' class='alert alert-warning' style='display:none'>
+<img src='https://portal.vtc.gov.vn/BackEnd/assets/admin/layout/img/loading.gif' />
+<strong>Đang xử lý...</strong>
+</div>
+<p class='hint'> Thông tin cá nhân: </p>
+<div class='form-group'>
+<label class='control-label visible-ie8 visible-ie9'>Họ tên</label>
+<input class='form-control placeholder-no-fix' type='text' placeholder='Họ tên' name='fullname' data-bind='value: FullName' />
+<span data-bind='validationMessage: FullName'></span>
+</div>
+<div class='form-group'>
+<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+<label class='control-label visible-ie8 visible-ie9'>Email</label>
+<input class='form-control placeholder-no-fix' type='text' placeholder='Email' name='email' data-bind='value: Email' />
+<span data-bind='validationMessage: Email'></span>
+</div>
+<div class='form-group'>
+<label class='control-label visible-ie8 visible-ie9'>Điện thoại</label>
+<input class='form-control placeholder-no-fix' type='text' autocomplete='off' placeholder='Điện thoại' name='username' data-bind='value: Phone' />
+<span data-bind='validationMessage: Phone'></span>
+</div>
+<p class='hint'> Thông tin tài khoản: </p>
+<div class='form-group'>
+<label class='control-label visible-ie8 visible-ie9'>Tài khoản</label>
+<input class='form-control placeholder-no-fix' type='text' autocomplete='off' placeholder='Tài khoản' name='username' data-bind='value: UserName' />
+<span data-bind='validationMessage: UserName'></span>
+</div>
+<div class='form-group'>
+<label class='control-label visible-ie8 visible-ie9'>Mật khẩu</label>
+<input class='form-control placeholder-no-fix' type='password' autocomplete='off' id='register_password' placeholder='Mật khẩu' name='password' data-bind='value: PasswordHash' />
+<span data-bind='validationMessage: PasswordHash'></span>
+</div>
+<div class='form-actions'>
+<button type='button' id='register-back-btn' class='btn btn-default'>Trở lại</button>
+<button type='button' class='btn btn-success uppercase pull-right' data-bind='click: $root.register'>Đăng ký</button>
+</div>
+</form>
+<!-- END REGISTRATION FORM -->
+<div id='loading' class='modal fade' tabindex='-1' aria-hidden='true'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
+<h4 class='modal-title'>Đang xử lý</h4>
+</div>
+<div class='modal-body'>
+<p style='text-align:center;'>
+<img src='https://portal.vtc.gov.vn/BackEnd/assets/admin/layout/img/loading.gif' />
+</p>
+</div>
+<div class='modal-footer'>
+<button type='button' data-dismiss='modal' class='btn grey'>Đóng</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='copyright'>2021 &copy;<a class='copyright' href='https://trantiendatnet.github.io/3cms' target='_self' style='text-decoration: none;'>www.trantiendat.com.vn</a>. ALL Rights Reserved.</div>  </body>
+<!-- END BODY -->
+</html>
