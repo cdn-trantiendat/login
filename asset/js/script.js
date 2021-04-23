@@ -35,7 +35,7 @@ window.location="home-page2.html";
 <!-- GUEST -->
 if (username=="dattt_ct@trantiendat.com.vn" && password=="dattt_v") { 
 loggedin=true;
-window.location="https://sites.google.com/view/truyenhinh-trantiendat-com-vn/3cms/truyenhinh-idftthclive19282";
+window.location="https://truyenhinh-trantiendat.github.io/live/";
 }
 if (username=="b" && password=="b") {
 loggedin=true; window.location="https://sites.google.com/view/truyenhinh-trantiendat-com-vn/3cms/id";
