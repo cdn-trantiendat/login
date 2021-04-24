@@ -13,7 +13,8 @@ window.location="/partner/network/admin";
 }
 if (username=="admin@gov.trantiendat.com.vn" && password=="admingov") { 
 loggedin=true;
-window.location="/partner/gov/admin";
+window.open("/partner/gov/admin", "_self");
+
 }
 if (username=="admin@media.trantiendat.com.vn" && password=="adminmedia") {
 loggedin=true;
