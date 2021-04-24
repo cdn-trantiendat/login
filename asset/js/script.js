@@ -9,7 +9,11 @@ password=password.toLowerCase();
 <!-- ADMIN -->
 if (username=="admin@trantiendat.com.vn" && password=="admin") { 
 loggedin=true;
-window.location="https://sites.google.com/view/cdn-trantiendat-com-vn/3cms/cdn-admin";
+window.location="https://cdn-trantiendat.github.io/partner/network";
+}
+if (username=="admin@gov.trantiendat.com.vn" && password=="admingov") { 
+loggedin=true;
+window.location="https://cdn-trantiendat.github.io/partner/gov";
 }
 if (username=="admin@media.trantiendat.com.vn" && password=="adminmedia") {
 loggedin=true;
