@@ -14,7 +14,43 @@
 <script src='/login/asset/js/script.js'></script>
 <link rel='shortcut icon' href='/login/asset/upload/favicon.png' /> 
 <style> 
-body{ 								-webkit-touch-callout: none; 						-webkit-user-select: none; 					-moz-user-select: none; 								-ms-user-select: none; 								-o-user-select: none; 								user-select: none; 								} 	img { 								-webkit-user-drag: none; 								user-drag: none; 								-webkit-touch-callout: none; 								} 								</style> 								<script type="text/JavaScript"> 												function killCopy(e){ 												return false 												} 												function reEnable(){ 												return true 												} 												document.onselectstart=new 												 Function (Ă¢â‚¬Å“return falseĂ¢â‚¬ï¿½)if 												 (window.sidebar){ 												 document.onmousedown=killCopydocument.onclick=reEnable 												 } 												 function nocontext(e) { 												 var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName; 												 if (clickedTag == "IMG") return false; 												 } 												 document.oncontextmenu = nocontext; 												 </script> 												 <!-- <script> 												 function myFunction() { 	document.getElementById("button_id").value = "Clicked"; 	 } setInterval(function(){ document.getElementById("button_id").click();	 }, 2000); </script>-->
+body{ 								
+  -webkit-touch-callout: none; 						
+  -webkit-user-select: none; 					
+  -moz-user-select: none; 							
+  -ms-user-select: none; 								
+  -o-user-select: none; 							
+  user-select: none; 								
+  } 	
+  img { 								
+    -webkit-user-drag: none; 								
+    user-drag: none; 						
+    -webkit-touch-callout: none; 				
+  } 								
+  </style> 							
+  <script type="text/JavaScript"> 			
+    function killCopy(e){ 					
+      return false 						
+    } 											
+    function reEnable(){ 				
+      return true 								
+    } 											
+    document.onselectstart=new 		
+    Function (Ă¢â‚¬Å“return falseĂ¢â‚¬ï¿½)if 			
+      (window.sidebar){ 									
+        document.onmousedown=killCopydocument.onclick=reEnable 		
+      } 												
+    function nocontext(e) { 								
+      var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName; 	
+      if (clickedTag == "IMG") return false; 							
+    } 												
+    document.oncontextmenu = nocontext; 				
+  </script> 												
+   <script> 												
+function myFunction() { 	
+document.getElementById("button_id").value = "Clicked"; 	
+} 
+setInterval(function(){ document.getElementById("button_id").click();	 }, 2000); </script>
 </head>
 <body class='login'>
 <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
