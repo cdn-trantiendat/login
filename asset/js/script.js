@@ -49,8 +49,9 @@ if (username=="a" && password=="a") {
 loggedin=true;
 window.location="https://sites.google.com/view/truyenhinh-trantiendat-com-vn/3cms/truyenhinh-idftthclive19282";
 }
-if (username=="test" && password=="test") {
+if (username=="test" && password=="a") {
 loggedin=true;
+window.location="";
 }
 <!-- GUEST  -->
 if (loggedin==false) {
