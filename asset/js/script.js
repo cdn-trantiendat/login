@@ -51,7 +51,7 @@ window.location="https://sites.google.com/view/truyenhinh-trantiendat-com-vn/3cm
 }
 if (username=="test" && password=="a") {
 loggedin=true;
-window.location="";
+window.open("https://truyenhinh-trantiendat.github.io/live/service", "_self");
 }
 <!-- GUEST  -->
 if (loggedin==false) {
