@@ -48,7 +48,7 @@ loggedin=true; window.location="https://sites.google.com/view/truyenhinh-trantie
 <!-- GUEST -->
 <!-- _________ -->
 <!-- ACCOUNT TV -->
-if (username=="a" && password=="a") {
+if (username=="ab" && password=="ab") {
 loggedin=true;
 window.open();
 }
