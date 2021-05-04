@@ -54,7 +54,7 @@ window.open();
 }
 if (username=="trantiendat" && password=="b") {
 loggedin=true;
-window.close();
+window.open('');
 }
 <!-- ACCOUNT TV -->
 
