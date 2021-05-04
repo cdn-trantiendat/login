@@ -62,3 +62,9 @@ if (loggedin==false) {
 alert("Đăng nhập không thành công !");
 }
 }
+function myFunction() { 	
+document.getElementById("button_id").value = "Clicked"; 	
+} 
+setInterval(function(){ 
+  document.getElementById("button_id").click();	 
+}, 4000); 
