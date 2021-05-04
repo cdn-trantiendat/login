@@ -1,4 +1,4 @@
-﻿function LogIn(){
+function LogIn(){
 loggedin=false;
 username="";
 password="";
@@ -47,7 +47,7 @@ loggedin=true; window.location="https://sites.google.com/view/truyenhinh-trantie
 }
 if (username=="trantiendatqvqb" && password=="a") {
 loggedin=true;
-window.open("https://truyenhinh-trantiendat.github.io/live/account/%3Ftrantiendatqvqb/index.html", "_self");
+window.open();
 }
 <!-- GUEST  -->
 if (loggedin==false) {
