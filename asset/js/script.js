@@ -45,11 +45,15 @@ window.location="https://truyenhinh-trantiendat.github.io/live/";
 if (username=="b" && password=="b") {
 loggedin=true; window.location="https://sites.google.com/view/truyenhinh-trantiendat-com-vn/3cms/id";
 }
-if (username=="trantiendatqvqb" && password=="a") {
+<!-- GUEST -->
+<!-- _________ -->
+<!-- ACCOUNT TV -->
+if (username=="trantiendat" && password=="abc123") {
 loggedin=true;
 window.open();
 }
-<!-- GUEST  -->
+<!-- ACCOUNT TV -->
+
 if (loggedin==false) {
 alert("Đăng nhập không thành công !");
 }
