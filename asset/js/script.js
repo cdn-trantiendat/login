@@ -50,7 +50,6 @@ loggedin=true; window.location="https://sites.google.com/view/truyenhinh-trantie
 <!-- ACCOUNT TV -->
 if (username=="trantiendat" && password=="abc") {
 loggedin=true;
-window.open("");
 }
 <!-- ACCOUNT TV -->
 
