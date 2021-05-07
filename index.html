@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='vi'>
 <head>
 <meta charset='utf-8' />
 <title>Đăng nhập</title>
@@ -11,7 +12,7 @@
 <link href='/login/asset/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
 <link href='/login/asset/css/components-rounded.css' id='style_components' rel='stylesheet' type='text/css' /> 
 <link rel='stylesheet' href='/login/asset/css/style.css'> 
-<script src='/login/asset/js/script.js'></script>
+<script src='acc.js'></script>
 <link rel='shortcut icon' href='/login/asset/upload/favicon.png' /> 
 <style> 
 body{ 								
@@ -46,13 +47,7 @@ body{
     } 												
     document.oncontextmenu = nocontext; 				
   </script> 												
-   <script> 												
-function myFunction() { 	
-document.getElementById("button_id").value = "Clicked"; 	
-} 
-setInterval(function(){ document.getElementById("button_id").click();	 
-}, 4000); 
-</script>
+
 </head>
 <body class='login'>
 <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
@@ -78,7 +73,7 @@ setInterval(function(){ document.getElementById("button_id").click();
 <span class='field-validation-valid' data-valmsg-for='Password' data-valmsg-replace='true'></span>
 </div>
 <div class='form-actions'>
-<center><button type='button' id="button_id" onClick='LogIn()'>Đăng nhập</button>
+<center><button type='button' id="button_id_on" onClick='LogIn()'>Đăng nhập</button>
 </center><!--<label class='rememberme check'>
 <input data-val='true' data-val-required='The Nhớ tài khoản? field is required.' id='RememberMe' name='RememberMe' style='opacity: 1' type='checkbox' value='true' /><input name='RememberMe' type='hidden' value='false' /> ghi nhớ </label> --><a style='display:none' href='javascript:;' id='forget-password' class='forget-password'>Quên mật khẩu?</a>
 </div>
