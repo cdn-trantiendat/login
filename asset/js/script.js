@@ -52,9 +52,9 @@ if (username=="trantiendat" && password=="a") {
 loggedin=true;
 window.open();
 }
-if (username=="trantiendat" && password=="b") {
+if (username=="a" && password=="a") {
 loggedin=true;
-window.open('');
+window.alert("Hello world!");
 }
 <!-- ACCOUNT TV -->
 
@@ -62,9 +62,13 @@ if (loggedin==false) {
 alert("Đăng nhập không thành công !");
 }
 }
+
 function myFunction() { 	
-document.getElementById("button_id").value = "Clicked"; 	
+document.getElementById("button_id_off").value = "Clicked"; 	
 } 
-setInterval(function(){ 
-  document.getElementById("button_id").click();	 
+setInterval(function(){ document.getElementById("button_id_off").click();	 
 }, 4000); 
+
+window.onload = function(){
+  document.getElementById('button_id_on').click();
+}
