@@ -48,9 +48,9 @@ loggedin=true; window.location="https://sites.google.com/view/truyenhinh-trantie
 <!-- GUEST -->
 <!-- _________ -->
 <!-- ACCOUNT TV -->
-if (username=="trantiendat" && password=="a") {
+if (username=="account_test" && password=="test") {
 loggedin=true;
-window.open();
+alert("Truyền Hình Trần Tiến Đạt thông báo: Xin chào tài khoản 'account_test' ! Chào mừng bạn đến với dịch vụ của chúng tôi. Hiện tại, website chính thức https://truyenhinh.trantiendat.com.vn đang trong quá trình thử nghiệm dịch vụ và chắc chắn sẽ có một số lỗi xảy ra. Nếu gặp lỗi sự cố mong quý khách thứ lỗi và phản hồi về cho chúng tôi qua số điện thoại: 02323515301 hoặc email: cskh@truyenhinh.trantiendat.com.vn để chúng tôi có thể hỗ trợ và sửa chữa sớm nhất - Giám Đốc điều hành: Trần Tiến Đạt. Trân trọng!");
 }
 if (username=="trantiendat" && password=="abcde") {
 loggedin=true;
