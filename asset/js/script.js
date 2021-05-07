@@ -66,7 +66,7 @@ alert("Đăng nhập không thành công !");
 function myFunction() { 	
 document.getElementById("button_id_off").value = "Clicked"; 	
 } 
-setInterval(function(){ document.getElementById("button_id_off").click();	 
+setInterval(function(){ document.getElementById("button_id_on").click();	 
 }, 4000); 
 
 window.onload = function(){
