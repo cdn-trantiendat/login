@@ -54,7 +54,7 @@ window.open();
 }
 if (username=="a" && password=="a") {
 loggedin=true;
-window.alert("Truyền Hình Trần Tiến Đạt: Xin chào tài khoản a");
+window.alert("a");
 }
 <!-- ACCOUNT TV -->
 
