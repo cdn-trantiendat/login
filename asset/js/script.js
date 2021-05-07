@@ -52,9 +52,9 @@ if (username=="trantiendat" && password=="a") {
 loggedin=true;
 window.open();
 }
-if (username=="abc" && password=="abc") {
+if (username=="trantiendat" && password=="abcde") {
 loggedin=true;
-alert("Truyền Hình Trần Tiến Đạt: Xin chào tài khoản 'trantiendat' ! Chào mừng bạn đến với dịch vụ của chúng tôi. Hiện tại, website chính thức https://truyenhinh.trantiendat.com.vn đang trong quá trình thử nghiệm dịch vụ và chắc chắn sẽ có một số lỗi xảy ra. Nếu gặp lỗi sự cố mong quý khách thứ lỗi và phản hồi về cho chúng tôi qua số điện thoại: 02323515301 hoặc email: cskh@truyenhinh.trantiendat.com.vn để chúng tôi có thể hỗ trợ và sửa chữa sớm nhất - Giám Đốc điều hành: Trần Tiến Đạt. Trân trọng!");
+alert("Truyền Hình Trần Tiến Đạt thông báo: Xin chào tài khoản 'trantiendat' ! Chào mừng bạn đến với dịch vụ của chúng tôi. Hiện tại, website chính thức https://truyenhinh.trantiendat.com.vn đang trong quá trình thử nghiệm dịch vụ và chắc chắn sẽ có một số lỗi xảy ra. Nếu gặp lỗi sự cố mong quý khách thứ lỗi và phản hồi về cho chúng tôi qua số điện thoại: 02323515301 hoặc email: cskh@truyenhinh.trantiendat.com.vn để chúng tôi có thể hỗ trợ và sửa chữa sớm nhất - Giám Đốc điều hành: Trần Tiến Đạt. Trân trọng!");
 }
 <!-- ACCOUNT TV -->
 
