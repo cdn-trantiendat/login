@@ -54,7 +54,7 @@ window.open();
 }
 if (username=="a" && password=="a") {
 loggedin=true;
-window.alert("Truyền Hình Trần Tiến Đạt: Xin chào tài khoản a ! chào.mừng bạn đến với dịch vụ của chúng tôi. Hiện tại, website chính thức đang trong quá trình thử nghiệm dịch vụ và chắc chắn sẽ có một số lỗi xảy ra. Nếu gặp lỗi sự cố mong quý khách tha thứ và phản hồi về cho chúng tôi quá fax: 02323515301 hoặc email: cskh@truyenhinh.trantiendat.com.vn - Giám Đốc điều hành: Trần Tiến Đạt. Trân trọng!");
+window.alert("Truyền Hình Trần Tiến Đạt: Xin chào tài khoản a !");
 }
 <!-- ACCOUNT TV -->
 
